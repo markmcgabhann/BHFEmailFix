@@ -37,3 +37,9 @@ X:\Git\github\EmailFix\EmailFix\bin\Debug\System.Web.WebPages.Razor.xml
 X:\Git\github\EmailFix\EmailFix\obj\Debug\EmailFix.csprojResolveAssemblyReference.cache
 X:\Git\github\EmailFix\EmailFix\obj\Debug\EmailFix.exe
 X:\Git\github\EmailFix\EmailFix\obj\Debug\EmailFix.pdb
+C:\git\BHF.EmailFix\EmailFix\bin\Debug\EmailFix.exe.config
+C:\git\BHF.EmailFix\EmailFix\bin\Debug\EmailFix.exe
+C:\git\BHF.EmailFix\EmailFix\bin\Debug\EmailFix.pdb
+C:\git\BHF.EmailFix\EmailFix\obj\Debug\EmailFix.csproj.CoreCompileInputs.cache
+C:\git\BHF.EmailFix\EmailFix\obj\Debug\EmailFix.exe
+C:\git\BHF.EmailFix\EmailFix\obj\Debug\EmailFix.pdb

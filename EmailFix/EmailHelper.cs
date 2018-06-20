@@ -16,9 +16,6 @@ namespace EmailFix
     {
         public static bool SendEmail(string fromName, string fromAddress, string toName, string toAddress, string subject, string message )
         {
-            //Thread.SpinWait(100000);
-            //Console.WriteLine(" ... ok ");
-            //return true;
             try
             {
                 var mailDefinition = new MailDefinition
@@ -44,39 +41,15 @@ namespace EmailFix
             }
             catch (Exception ex)
             {
-             //   Log.Error(string.Format("Error sending email: to: {0}, subject: {1}, error: {2}", toAddress, subject, ex.Message), MethodBase.GetCurrentMethod().ToString());
                 Console.WriteLine(ex.Message);
                 if(ex.InnerException != null) Console.WriteLine(ex.InnerException.Message);
                 return false;
             }
         }
-
-        
-
-        public static string ReadFromFile(string filePath)
-        {
-            if (!string.IsNullOrEmpty(filePath))
-            {
-                string fileText = File.ReadAllText(filePath);
-
-                return fileText;
-            }
-
-            return string.Empty;
-        }
-
+      
         public static string SubjectFormat(string subject)
         {
             return subject.Replace("\r", " ").Replace("\n", " ");
-        }
-
-        public static string BuildEmailBody(string emailBody, ListDictionary replacements)
-        {
-            var mailDefinition = new MailDefinition();
-            string fakeEmail = "info@comms.bhf.org.uk";
-            mailDefinition.From = fakeEmail;
-            var mailMessage = mailDefinition.CreateMailMessage(fakeEmail, replacements, emailBody, new Control());
-            return mailMessage.Body;
         }
     }
 }
